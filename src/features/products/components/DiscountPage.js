@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductList from './ProductList'
+import ProductList from '../../../features/products/components/ProductList'
 import Shop_contant from '../../home/components/shop_contant'
 export default class DiscountPage extends React.Component{
     constructor(props){
@@ -9,7 +9,7 @@ export default class DiscountPage extends React.Component{
         return(
             <div>
                 <ProductList />
-                <Shop_contant/>
+                
             </div>
         )
     }
