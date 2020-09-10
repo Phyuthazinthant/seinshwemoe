@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import Header from './app/components/Header'
+import Routes from './app/Routes';
 function App() {
   return (
-    <div className="App">
-      <h1>header</h1>
+    <div>
+      <Routes />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
