@@ -1,0 +1,13 @@
+.shop-contant{
+    position: relative;
+    margin-top: 3%;
+}
+.shop_text{
+    position: absolute;
+    color: white;
+    left: 0;
+     right: 0;
+    bottom:8%;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
