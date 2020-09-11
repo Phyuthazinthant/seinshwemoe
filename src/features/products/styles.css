@@ -1,0 +1,19 @@
+hr{
+    border-top: 5px solid goldenrod;
+} 
+.zoom{
+    padding: 50px;
+    transition: transform 1.1s;
+    
+    /* margin: 0 auto; */
+}
+.zoom:hover{
+    transform: scale(1.5);
+}
+.title-centered{
+    position: absolute;
+    
+    bottom: 500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
