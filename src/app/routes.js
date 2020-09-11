@@ -12,9 +12,9 @@ function Routes() {
                 <Header />
                 <Switch>
                     <Route exact path="/">
-                        <Redirect to="/carousel" />
+                        <Redirect to="/home" />
                     </Route>
-                    <Route path="/carousel" render={() => <Carousel />} />
+                    <Route path="/home" render={() => <Carousel />} />
 
                     <Route path="/discount" render={() => <DiscountPage />} />
                 
