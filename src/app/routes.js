@@ -1,21 +1,28 @@
 import React from 'react'
-import {Switch,Route,Redirect} from 'react-router-dom'
-import Footer from './components/Footer'
-import DiscountPage from '../pages/DiscountPage'
-export default class Routes extends React.Component{
-    constructor(props){
-        super(props)
-    }
-    render(){
-        return(
-            <div>
-                {/* <Switch>
-                    <Route path="discount" component={DiscountPage} />
-                </Switch> */}
-                <DiscountPage />
-                <Footer />
 
-            </div>
-        )
-    }
+import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Carousel from '../home/components/Carousel'
+import DiscountPage from '../pages/DiscountPage'
+function Routes() {
+    return (
+        <div>
+            <Router>
+                <Header />
+                <Switch>
+                    <Route exact path="/">
+                        <Redirect to="/home" />
+                    </Route>
+                    <Route path="/home" render={() => <Carousel />} />
+
+                    <Route path="/discount" render={() => <DiscountPage />} />
+                
+                </Switch>
+                <Footer />
+            </Router>
+
+        </div>
+    )
 }
+export default Routes;

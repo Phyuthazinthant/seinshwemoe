@@ -1,3 +1,35 @@
+
+.navbar{
+  display: flex;
+}
+.logoText{
+  color:rgb(133, 15, 7);
+  text-align: center;
+}
+.logoText2{
+  color:rgb(235, 229, 229);
+  text-align: center;
+}
+.imgLogo{
+  height: 65px; 
+  width: 95px ;
+}
+.textSize{
+  font-size:15px;
+}
+.textSize2{
+  font-size:11px
+}
+@media screen and (max-width: 767px) {
+  .imgLogo{
+    margin-left: -20px;
+     height: 60px; 
+     width: 70px ;
+  }
+  .textSize, .textSize2{
+    font-size: 11px;
+}
+}
 .foot_text_gp{
     color: black;
     background-color: #dab03c;
@@ -8,3 +40,34 @@
     background-color:#e5b73b; 
    height:35%;  
  }
+.navbar{
+  display: flex;
+}
+.logoText{
+  color:rgb(133, 15, 7);
+  text-align: center;
+}
+.logoText2{
+  color:rgb(235, 229, 229);
+  text-align: center;
+}
+.imgLogo{
+  height: 65px; 
+  width: 95px ;
+}
+.textSize{
+  font-size:15px;
+}
+.textSize2{
+  font-size:11px
+}
+@media screen and (max-width: 767px) {
+  .imgLogo{
+    margin-left: -20px;
+     height: 60px; 
+     width: 70px ;
+  }
+  .textSize, .textSize2{
+    font-size: 11px;
+}
+}

@@ -10,8 +10,12 @@
     "google-maps-react": "^2.0.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+<<<<<<< HEAD
     "react-mm-text": "0.0.1-rc.2",
     "react-nouislider": "^2.0.1",
+=======
+    "react-mm-text": "^0.0.1-rc.2",
+>>>>>>> 2fbf3042ee23fd42e176af946f0a2c75051d09b2
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "round-to": "^4.1.0"
