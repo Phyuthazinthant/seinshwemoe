@@ -46,9 +46,11 @@ class Header extends Component {
                             <a class="nav-link" href="#" style={{ fontSize: '1.2em' }}>Home <span class="sr-only">(current)</span></a>
                         </li>
                         </Link>
+                        <Link to="/discount">
                         <li class="nav-item">
                             <a class="nav-link" href="#" style={{ fontSize: '1.2em' }}>New Arrival</a>
                         </li>
+                        </Link>
                         <li class="nav-item">
                             <a class="nav-link" href="#" style={{ fontSize: '1.2em' }}>Popular</a>
                         </li>
