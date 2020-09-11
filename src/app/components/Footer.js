@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import '../styles.css'
 export default class Footer extends React.Component{
@@ -33,3 +34,16 @@ export default class Footer extends React.Component{
         )
     }
 }
+=======
+import MMText from 'react-mm-text';
+import language from '../../configs/Language'
+import React from 'react'
+
+function Footer(){
+    return(
+<div>
+</div>
+    );
+}
+export default Footer;
+>>>>>>> 3e2e6d44c1e57ba786b7a1c5eb6a9b3a25fb51bf

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -17,3 +18,17 @@ export default class App extends React.Component{
     )
   }
 }
+=======
+import React from 'react'
+import Header from './app/components/Header'
+import Routes from './app/Routes';
+function App() {
+  return (
+    <div>
+      <Routes />
+    </div>
+  )
+}
+
+export default App
+>>>>>>> 3e2e6d44c1e57ba786b7a1c5eb6a9b3a25fb51bf

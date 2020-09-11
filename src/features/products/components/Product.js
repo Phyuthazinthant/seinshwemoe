@@ -27,7 +27,7 @@ export default class Product extends React.Component {
 
                                 <img src={First} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Code No - 0001<br></br></h5>
+                                    <h5 className="card-title text-center">Code No - 0001<br></br></h5>
 
                                 </div>
                                 <div>
@@ -38,7 +38,7 @@ export default class Product extends React.Component {
                     </div>
                     <div className="col-lg-4">
                         <div className="card cta cta--featured cardImage d-flex justify-content-around " style={{ backgroundColor: '#f4f4f4', borderStyle: "none" }}>
-                            <div className="card-block zoomWrapper  " style={{ backgroundColor: '#f4f4f4' }}>
+                            <div className="card-block zoomWrapper text-center" style={{ backgroundColor: '#f4f4f4' }}>
 
                                 <img src={Second} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                 <div className="card-body">
@@ -58,7 +58,7 @@ export default class Product extends React.Component {
 
                                 <img src={Third} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                 <div className="card-body">
-                                    <h5 className="card-title">Code No - 0003<br></br></h5>
+                                    <h5 className="card-title text-center">Code No - 0003<br></br></h5>
                                 </div>
                                 <div>
                                     <hr className="new1" style={{display:"block"}}></hr>
@@ -75,7 +75,7 @@ export default class Product extends React.Component {
 
                                     <img src={Four} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0004<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0004<br></br></h5>
                                     </div>
                                     <div>
                                         <hr className="new1" style={{display:"block"}}></hr>
@@ -90,7 +90,7 @@ export default class Product extends React.Component {
                                 <div className="card-block zoomWrapper  " style={{ backgroundColor: '#f4f4f4' }}>
                                     <img src={Five} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0005<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0005<br></br></h5>
                                     </div>
                                     <div>
                                         <hr className="new1" style={{display:"block"}}></hr>
@@ -106,7 +106,7 @@ export default class Product extends React.Component {
 
                                     <img src={Six} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0006<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0006<br></br></h5>
                                     </div>
                                     <div>
                                         <hr className="new1" style={{display:"block"}}></hr>
@@ -124,7 +124,7 @@ export default class Product extends React.Component {
 
                                     <img src={Seven} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0007<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0007<br></br></h5>
                                     </div>
                                     <div>
                                         <hr className="new1" style={{display:"block"}}></hr>
@@ -139,7 +139,7 @@ export default class Product extends React.Component {
                                 <div className="card-block zoomWrapper  " style={{ backgroundColor: '#f4f4f4' }}>
                                     <img src={Eigth} className="card-img-top zoom" alt="Sein Shwe Moe" style={{height: 365}}></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0008<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0008<br></br></h5>
 
                                     </div>
                                     <div>
@@ -156,7 +156,7 @@ export default class Product extends React.Component {
 
                                     <img src={Nine} className="card-img-top zoom" alt="Sein Shwe Moe" ></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0009<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0009<br></br></h5>
                                     </div>
                                     <div>
                                         <hr className="new1" style={{display:"block"}}></hr>
@@ -174,7 +174,7 @@ export default class Product extends React.Component {
 
                                     <img src={Ten} className="card-img-top zoom" alt="Sein Shwe Moe"></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0010<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0010<br></br></h5>
                                     </div>
                                     <div>
                                         <hr className="new1" style={{display:"block"}}></hr>
@@ -189,7 +189,7 @@ export default class Product extends React.Component {
                                 <div className="card-block zoomWrapper  " style={{ backgroundColor: '#f4f4f4' }}>
                                     <img src={Eleven} className="card-img-top zoom" alt="Sein Shwe Moe" style={{ height: 365 }}></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0011<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0011<br></br></h5>
 
                                     </div>
                                     <div>
@@ -206,7 +206,7 @@ export default class Product extends React.Component {
 
                                     <img src={Twelve} className="card-img-top zoom" alt="Sein Shwe Moe" ></img>
                                     <div className="card-body">
-                                        <h5 className="card-title">Code No - 0012<br></br></h5>
+                                        <h5 className="card-title text-center">Code No - 0012<br></br></h5>
                                     </div>
                                     <div>
                                         <hr className="new1" style={{display:"block"}}></hr>
