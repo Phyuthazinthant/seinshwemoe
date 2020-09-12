@@ -4,8 +4,8 @@ import Crl2 from './images/crl2.jpg';
 import Crl3 from './images/crl3.jpg';
 import Crl4 from './images/crl4.jpg';
 import MMText from 'react-mm-text';
-
-
+import Shop_contant from '../../features/home/components/shop_contant'
+import Knowledge from './Knowledge';
 function Carousel() {
     return (
 
@@ -13,20 +13,20 @@ function Carousel() {
         >
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src={Crl1} class="d-block w-100" alt="crl1"
+                    <img src={Crl2} class="d-block w-100" alt="crl2"
                         style={{ width: "500px", height: "500px" }} />
                 </div>
                 <div class="carousel-item">
-                    <img src={Crl2} class="d-block w-100" alt="Crl2"
-                        style={{ width: "500px", height: "500px" }} />
+                    <img src={Crl1} class="d-block w-100" alt="Crl1"
+                        style={{ width: "400px", height: "500px" }} />
                 </div>
                 <div class="carousel-item">
                     <img src={Crl3} class="d-block w-100" alt="Crl3"
-                        style={{ width: "500px", height: "500px" }} />
+                        style={{ width: "400px", height: "500px" }} />
                 </div>
                 <div class="carousel-item">
                     <img src={Crl4} class="d-block w-100" alt="Crl4"
-                        style={{ width: "500px", height: "500px" }} />
+                        style={{ width: "400px", height: "500px" }} />
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -37,6 +37,7 @@ function Carousel() {
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            <br /><br />
             <marquee direction="right" style={{ color: 'olive', fontSize: '1.2em' }}>
                 <MMText
                     text={" ယေန့ ျမန္မာ့ေရႊေပါက္ေစ်း   1,330,000 MMK."}
@@ -44,11 +45,12 @@ function Carousel() {
                     conveter={"rabbit"}
                     detector={"knayi"}
                 />
-            </marquee>
-           
+            </marquee><br /><br />
+            <Knowledge />
+            <Shop_contant />
 
 
-                    </div>
+        </div>
 
     )
 }
