@@ -9,10 +9,8 @@ class Header extends Component {
     render() {
         return (
 
-            <nav className="navbar navbar-expand-lg navbar-light"
-                style={{ backgroundColor: "#dab03c" }} >
-
-                <Link className="navbar-brand d-flex">
+            <nav className="navbar navbar-expand-lg navbar-light " style={{ backgroundColor: "#dab03c" }}>
+                <Link className="navbar-brand d-flex" to="#">
                     <img src={logo} alt="logo text" className="imgLogo rounded-circle " />
                     <p className="logoText" >
                         <small>
@@ -24,7 +22,7 @@ class Header extends Component {
                             />
                         </small>
                         <br />
-                        <span className="logoText2">
+                        <span >
                             <MMText
                                 text={language["mm"].shop}
                                 showFont={"unicode"}
@@ -35,67 +33,47 @@ class Header extends Component {
                     </p>
 
                 </Link>
-
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="nav navbar-nav ml-auto">
-                        <Link to="/home" style={{textDecoration:'none' }} class="nav-link" >
-                        <li class="nav-item  " data-toggle="collapse" data-target=".navbar-collapse.show" >
-                            <a  style={{ fontSize: '1.2em' }}>Home <span class="sr-only">(current)</span></a>
+                <div className="collapse navbar-collapse dropdownclick " id="collapsibleNavbar">
+                    <ul className=" nav navbar-nav ml-auto ">
+                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link " to="/home">Home</Link>
                         </li>
-                        </Link>
-                        <Link to="/discount" style={{ textDecoration:'none' }}>
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" style={{ fontSize: '1.2em' }}>New Arrival</a>
+                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link " to="/discount">New Arrival</Link>
                         </li>
-                        </Link >
-                        <Link to="/popular" style={{textDecoration:'none'}} >
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" style={{ fontSize: '1.2em' }}>Popular</a>
+                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link " to="/popular">Popular </Link>
                         </li>
-                        </Link>
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style={{ fontSize: '1.2em' }} href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Jwellery<i className="fa fa-caret-down"></i>
-                          </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li className="nav-item dropdown " >
+                            <Link to="#" className="nav-link ">Jwellery <i className="fa fa-caret-down"></i> </Link>
+                            <li className="dropdown-content small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link to="/"> Necklace</Link>
+                            <Link to="/">Bracelet</Link>
+                            <Link to="/"> Earrings</Link>
+                            <Link to="/"> Ring</Link>
+                            <Link to="/"> Pendant</Link>
+                                <div className="dropdown-divider"></div>
+                                <Link to="/">Discount Items</Link>
+                            </li>
+                        </li> 
 
-                                <Link><a class="dropdown-item mb-3" href="#">Necklace</a></Link>
-                                <Link><a class="dropdown-item mb-3" href="#">Bracelet</a></Link>
-                                <Link><a class="dropdown-item mb-3" href="#">Earrings</a></Link>
-                                <Link><a class="dropdown-item mb-3" href="#">Ring</a></Link>
-                                <Link><a class="dropdown-item mb-3" href="#">Pendant</a></Link>
-
-                                <hr />
-                                <Link><a class="dropdown-item " href="#">Discount Items</a></Link>
-
-
-                            </div>
+                        <li className="nav-item dropdown " >
+                            <Link to="#" className="nav-link ">Info <i className="fa fa-caret-down"></i> </Link>
+                            <li className="dropdown-content small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link to="/service"> Convertor</Link>
+                                <div className="dropdown-divider"></div>
+                                <Link to="/loan">Loan Calculator</Link>
+                            </li>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style={{ fontSize: '1.2em' }} href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Info
-                          </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <Link><a class="dropdown-item" href="#">Convertor</a></Link>
-                                <hr />
-                                <Link><a class="dropdown-item " href="#">Loan Calculator</a></Link>
-
-                            </div>
+                        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link" to="/contactus">Contact Us</Link>
                         </li>
-                        <Link style={{textDecoration:'none'}}>
-                        <li class="nav-item">
-                            <a class="nav-link" style={{ fontSize: '1.2em' }} href="#">Contact Us</a>
-                        </li>
-                        </Link>
                     </ul>
                 </div>
-
             </nav>
-
 
         );
     }
