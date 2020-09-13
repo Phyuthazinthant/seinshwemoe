@@ -9,9 +9,7 @@ export default class Pdiamond extends React.Component{
     render(){
         return(
             <div className="container">
-                <Pendant_nav/>
-                {/* <ProductFilter /> */}
-                <h1>hello pendent diamond page</h1>
+                <Pendant_nav/>            
                 <Shop_contant/>
             </div>
         )

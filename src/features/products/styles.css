@@ -1,14 +1,14 @@
 hr{
-    border-top: 5px solid goldenrod;
+    border-top: 5px solid #daa520;
 } 
 .zoom{
     padding: 50px;
-    transition: transform 1.1s;
-    
+    transition: transform 0.6s;
+   
     /* margin: 0 auto; */
 }
 .zoom:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 .title-centered{
     position: absolute;
