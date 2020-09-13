@@ -10,9 +10,9 @@ import './cstyles.css'
 function Carousel() {
     return (
         <div>
-            <div id="carouselExampleControls" class="carousel slide car-img " data-ride="carousel">
+            <div id="carouselExampleControls" class=" carousel_gp_img carousel slide " data-ride="carousel">
                 <div class="carousel-inner " >
-                    <div class="carousel-item active">
+                    <div class="carousel-item active col-12">
                         <img src={Crl2} class="d-block w-100" alt="crl2" />
                     </div>
                     <div class="carousel-item">
