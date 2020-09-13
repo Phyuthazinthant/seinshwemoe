@@ -7,7 +7,7 @@ function Knowledge2() {
         <table class="table-responsive" >
             <thead>
                 <tr>
-                    <th class="table-warning">န၀ရတ်ကိုးပါး</th>
+                    <th style={{padding:"15px",backgroundColor:"#dab03c", textShadow:"-1px 0 #dab03c ,1px 0 white,0 -1px rgb(255, 255, 255)"}}>န၀ရတ်ကိုးပါး</th>
                 </tr>
 
             </thead>

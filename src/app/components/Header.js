@@ -9,7 +9,7 @@ class Header extends Component {
     render() {
         return (
 
-            <nav className="navbar navbar-expand-lg navbar-light "
+            <nav className="navbar navbar-expand-lg navbar-light"
                 style={{ backgroundColor: "#dab03c" }} >
 
                 <Link className="navbar-brand d-flex">
@@ -41,9 +41,9 @@ class Header extends Component {
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="nav navbar-nav ml-auto">
-                        <Link to="/home" style={{textDecoration:'none'}} >
-                        <li class="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show" >
-                            <a  class="nav-link" style={{ fontSize: '1.2em' }}>Home <span class="sr-only">(current)</span></a>
+                        <Link to="/home" style={{textDecoration:'none' }} class="nav-link" >
+                        <li class="nav-item  " data-toggle="collapse" data-target=".navbar-collapse.show" >
+                            <a  style={{ fontSize: '1.2em' }}>Home <span class="sr-only">(current)</span></a>
                         </li>
                         </Link>
                         <Link to="/discount" style={{ textDecoration:'none' }}>
@@ -51,7 +51,7 @@ class Header extends Component {
                             <a class="nav-link" style={{ fontSize: '1.2em' }}>New Arrival</a>
                         </li>
                         </Link >
-                        <Link style={{textDecoration:'none'}} >
+                        <Link to="/popular" style={{textDecoration:'none'}} >
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" style={{ fontSize: '1.2em' }}>Popular</a>
                         </li>
@@ -59,7 +59,7 @@ class Header extends Component {
                         
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" style={{ fontSize: '1.2em' }} href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Jwellery
+                              Jwellery<i className="fa fa-caret-down"></i>
                           </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
@@ -70,7 +70,7 @@ class Header extends Component {
                                 <Link><a class="dropdown-item mb-3" href="#">Pendant</a></Link>
 
                                 <hr />
-                                <Link><a class="dropdown-item bg-warning" href="#">Discount Items</a></Link>
+                                <Link><a class="dropdown-item " href="#">Discount Items</a></Link>
 
 
                             </div>
@@ -82,11 +82,11 @@ class Header extends Component {
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <Link><a class="dropdown-item" href="#">Convertor</a></Link>
                                 <hr />
-                                <Link><a class="dropdown-item bg-warning" href="#">Loan Calculator</a></Link>
+                                <Link><a class="dropdown-item " href="#">Loan Calculator</a></Link>
 
                             </div>
                         </li>
-                        <Link>
+                        <Link style={{textDecoration:'none'}}>
                         <li class="nav-item">
                             <a class="nav-link" style={{ fontSize: '1.2em' }} href="#">Contact Us</a>
                         </li>

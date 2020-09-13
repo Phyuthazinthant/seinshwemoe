@@ -6,52 +6,46 @@ import Crl4 from './images/crl4.jpg';
 import MMText from 'react-mm-text';
 import Shop_contant from '../../features/home/components/shop_contant'
 import Knowledge from './Knowledge';
+import './cstyles.css'
 function Carousel() {
     return (
+        <div>
+            <div id="carouselExampleControls" class="carousel slide car-img " data-ride="carousel">
+                <div class="carousel-inner " >
+                    <div class="carousel-item active">
+                        <img src={Crl2} class="d-block w-100" alt="crl2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src={Crl1} class="d-block w-100" alt="Crl1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src={Crl3} class="d-block w-100" alt="Crl3" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src={Crl4} class="d-block w-100" alt="Crl4" />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
 
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
-        >
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src={Crl2} class="d-block w-100" alt="crl2"
-                        style={{ width: "500px", height: "500px" }} />
-                </div>
-                <div class="carousel-item">
-                    <img src={Crl1} class="d-block w-100" alt="Crl1"
-                        style={{ width: "400px", height: "500px" }} />
-                </div>
-                <div class="carousel-item">
-                    <img src={Crl3} class="d-block w-100" alt="Crl3"
-                        style={{ width: "400px", height: "500px" }} />
-                </div>
-                <div class="carousel-item">
-                    <img src={Crl4} class="d-block w-100" alt="Crl4"
-                        style={{ width: "400px", height: "500px" }} />
-                </div>
+                <marquee direction="right" style={{ fontSize: '1.2em', padding: "20px" }} >
+                    <MMText
+                        text={" ယေန့ ျမန္မာ့ေရႊေပါက္ေစ်း   1,330,000 MMK."}
+                        showFont={"unicode"}
+                        conveter={"rabbit"}
+                        detector={"knayi"}
+                    />
+                </marquee>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            <br /><br />
-            <marquee direction="right" style={{ color: 'olive', fontSize: '1.2em' }}>
-                <MMText
-                    text={" ယေန့ ျမန္မာ့ေရႊေပါက္ေစ်း   1,330,000 MMK."}
-                    showFont={"unicode"}
-                    conveter={"rabbit"}
-                    detector={"knayi"}
-                />
-            </marquee><br /><br />
             <Knowledge />
             <Shop_contant />
-
-
         </div>
-
     )
 }
 

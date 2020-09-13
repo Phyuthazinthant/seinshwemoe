@@ -44,12 +44,15 @@
   display: flex;
 }
 .logoText{
-  color:rgb(133, 15, 7);
+
+  text-shadow:-1px 0 #d6b35a ,1px 0 white,0 -1px rgb(255, 255, 255);
   text-align: center;
 }
 .logoText2{
-  color:rgb(235, 229, 229);
+  color:#0f0202;
   text-align: center;
+  text-shadow:-1px 0 #d6b35a ,1px 0 white,0 -1px rgb(255, 255, 255);
+
 }
 .imgLogo{
   height: 65px; 
@@ -71,3 +74,11 @@
     font-size: 11px;
 }
 }
+a:active{
+
+text-shadow:-1px 0 #ffffff,1px 0 white,0 -1px rgb(255, 255, 255);
+ 
+}
+.navbar-nav {
+    font-weight: 500;
+     }

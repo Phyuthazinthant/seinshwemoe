@@ -6,7 +6,8 @@ function ProductList() {
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th colspan="5" class="table-warning">ရွှေအရည်အသွေး</th>
+                        <th colspan="5" class="btn-warning" style={{padding:"15px" ,backgroundColor:"#dab03c" ,textShadow:"-1px 0 #dab03c ,1px 0 white,0 -1px rgb(255, 255, 255)"
+}}>ရွှေအရည်အသွေး</th>
                     </tr>
                     <tr>
                         <th scope="col">Karat</th>

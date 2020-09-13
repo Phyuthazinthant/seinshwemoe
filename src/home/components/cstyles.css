@@ -1,0 +1,6 @@
+@media screen and (max-width: 480px)and (min-width:1280px){
+    .car-img{
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+}
