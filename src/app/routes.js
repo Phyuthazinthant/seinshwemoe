@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Carousel from '../home/components/Carousel'
 import DiscountPage from '../pages/DiscountPage'
+<<<<<<< HEAD
 import Ngold from '../features/subJwellery.js/components/Ngold'
 import Nplatinum from '../features/subJwellery.js/components/Nplatinum'
 import Npearl from '../features/subJwellery.js/components/Npearl'
@@ -40,6 +41,9 @@ import Pgold from '../features/subJwellery.js/components/Pgold'
 import Pplatinum from '../features/subJwellery.js/components/Pplatinum'
 import Ppearl from '../features/subJwellery.js/components/Ppearl'
 import Pjade from '../features/subJwellery.js/components/Pjade'
+=======
+import Popular from '../popular/component/Popular'
+>>>>>>> af4b2e55813b2a671178236d5539cd53511483b2
 function Routes() {
     return (
         <div>
@@ -50,8 +54,8 @@ function Routes() {
                         <Redirect to="/home" />
                     </Route>
                     <Route path="/home" render={() => <Carousel />} />
-
                     <Route path="/discount" render={() => <DiscountPage />} />
+<<<<<<< HEAD
                     
                     <Route path="/necklace" render={() => <Necklace />} />
                     
@@ -92,6 +96,9 @@ function Routes() {
                     <Route path="/platinum-pendant" render={()=><Pplatinum/> }/>
                     <Route path="/pearl-pendant" render={()=><Ppearl/> }/>
                     <Route path="/jade-pendant" render={()=><Pjade/> }/>
+=======
+                    <Route path="/popular" render={()=> <Popular />} />               
+>>>>>>> af4b2e55813b2a671178236d5539cd53511483b2
                 </Switch>
 
                 <Footer />
