@@ -97,3 +97,11 @@ text-shadow:-1px 0 #ffffff,1px 0 white,0 -1px rgb(255, 255, 255);
 .navbar-nav {
     font-weight: 500;
      }
+
+.dropdown{
+  position: relative;
+}
+.dropul{
+  position: absolute;
+  
+}
