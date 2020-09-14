@@ -1,13 +1,10 @@
-import React from 'react'
+import React,{Component} from 'react'
 import Crl1 from './images/crl1.jpg';
 import Crl2 from './images/crl2.jpg';
 import Crl3 from './images/crl3.jpg';
 import Crl4 from './images/crl4.jpg';
-import MMText from 'react-mm-text';
-import Shop_contant from '../../features/home/components/shop_contant'
-import Knowledge from './Knowledge';
 import './cstyles.css'
-function Carousel() {
+export default function Contact_Carousel() {
     return (
         <div>
             <div id="carouselExampleControls" class=" carousel_gp_img carousel slide " data-ride="carousel">
@@ -33,20 +30,8 @@ function Carousel() {
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-
-                <marquee direction="right" style={{ fontSize: '1.2em', padding: "20px" }} >
-                    <MMText
-                        text={" ယေန့ ျမန္မာ့ေရႊေပါက္ေစ်း   1,330,000 MMK."}
-                        showFont={"unicode"}
-                        conveter={"rabbit"}
-                        detector={"knayi"}
-                    />
-                </marquee>
             </div>
-            <Knowledge />
-            <Shop_contant />
         </div>
-    )
-}
+        )
+    }
 
-export default Carousel

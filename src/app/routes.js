@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Carousel from '../home/components/Carousel'
@@ -7,7 +7,7 @@ import DiscountPage from '../pages/DiscountPage'
 import ServicePage from '../pages/ServicePage';
 import LoanPage from '../pages/LoanPage'
 import ContactPage from '../pages/ContactPage';
-
+import Popular from '../popular/component/Popular'
 function Routes() {
     return (
         <div>
@@ -20,8 +20,7 @@ function Routes() {
                     <Route path='/contactus' component={ContactPage} />
                     <Route path="/loan" component={LoanPage} />
                     <Route path="/service" component={ServicePage} />
-                    
-
+                    <Route path="/popular" render={()=> <Popular />} />               
                 </Switch>
                 <Footer />
             </Router>
