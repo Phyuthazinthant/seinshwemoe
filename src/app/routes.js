@@ -40,6 +40,7 @@ import Pgold from '../features/subJwellery.js/components/Pgold'
 import Pplatinum from '../features/subJwellery.js/components/Pplatinum'
 import Ppearl from '../features/subJwellery.js/components/Ppearl'
 import Pjade from '../features/subJwellery.js/components/Pjade'
+import Popular from '../popular/component/Popular'
 function Routes() {
     return (
         <div>
@@ -50,7 +51,6 @@ function Routes() {
                         <Redirect to="/home" />
                     </Route>
                     <Route path="/home" render={() => <Carousel />} />
-
                     <Route path="/discount" render={() => <DiscountPage />} />
                     
                     <Route path="/necklace" render={() => <Necklace />} />
@@ -92,6 +92,7 @@ function Routes() {
                     <Route path="/platinum-pendant" render={()=><Pplatinum/> }/>
                     <Route path="/pearl-pendant" render={()=><Ppearl/> }/>
                     <Route path="/jade-pendant" render={()=><Pjade/> }/>
+                    <Route path="/popular" render={()=> <Popular />} />               
                 </Switch>
 
                 <Footer />
