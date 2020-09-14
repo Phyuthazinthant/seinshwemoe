@@ -11,7 +11,7 @@ class Header extends Component {
     render() {
         return (
 
-            <nav className="navbar navbar-expand-lg navbar-light " style={{ backgroundColor: "#dab03c" }}>
+            <nav className="navbar navbar-expand-lg navbar-light sticky-top" style={{ backgroundColor: "#dab03c" }}>
                 <Link className="navbar-brand d-flex" to="#">
                     <img src={logo} alt="logo text" className="imgLogo rounded-circle " />
                     <p className="logoText" >
