@@ -3,8 +3,8 @@ import MMText from 'react-mm-text';
 import language from '../../configs/Language'
 import logo from '../smlogo.png';
 import { Link } from 'react-router-dom';
-import '../styles.css'
-
+import '../styles.css'  
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 class Header extends Component {
     render() {
         return (
@@ -50,13 +50,13 @@ class Header extends Component {
                         <li className="nav-item dropdown " >
                             <Link to="#" className="nav-link ">Jwellery <i className="fa fa-caret-down"></i> </Link>
                             <li className="dropdown-content small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <Link to="/"> Necklace</Link>
-                            <Link to="/">Bracelet</Link>
-                            <Link to="/"> Earrings</Link>
-                            <Link to="/"> Ring</Link>
-                            <Link to="/"> Pendant</Link>
+                            <Link to="/necklace"> Necklace</Link>
+                            <Link to="/bracelet">Bracelet</Link>
+                            <Link to="/earrings"> Earrings</Link>
+                            <Link to="/rings"> Ring</Link>
+                            <Link to="/pendants"> Pendant</Link>
                                 <div className="dropdown-divider"></div>
-                                <Link to="/">Discount Items</Link>
+                                <Link to="/discountitem">Discount Items</Link>
                             </li>
                         </li> 
 

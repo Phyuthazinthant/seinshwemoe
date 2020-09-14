@@ -3,12 +3,12 @@ import Shop_contant from '../../features/home/components/shop_contant'
 import PopularList from './PopularList'
 
 function Popular() {
-    return (
+    return ( 
         <div>
             <PopularList />
             <Shop_contant />
         </div>
-    )
+    ) 
 }
-
+ 
 export default Popular

@@ -3,7 +3,7 @@ import Gold from './images/gold.jpg'
 import Gem from './images/gem.jpeg'
 import ProductList from './ProductList'
 import Knowledge2 from './Knowledge2'
-
+ 
 function Knowledge() {
     return (
         <div class="container">
@@ -17,6 +17,6 @@ function Knowledge() {
         </div>
       
     )
-}
+} 
 
 export default Knowledge
