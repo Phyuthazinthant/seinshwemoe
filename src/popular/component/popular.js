@@ -10,5 +10,5 @@ function Popular() {
         </div>
     ) 
 }
-
+ 
 export default Popular
