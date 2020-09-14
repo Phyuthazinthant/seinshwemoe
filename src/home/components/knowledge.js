@@ -17,6 +17,6 @@ function Knowledge() {
         </div>
       
     )
-}
+} 
 
 export default Knowledge
