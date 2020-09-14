@@ -40,7 +40,7 @@ import Pgold from '../features/subJwellery.js/components/Pgold'
 import Pplatinum from '../features/subJwellery.js/components/Pplatinum'
 import Ppearl from '../features/subJwellery.js/components/Ppearl'
 import Pjade from '../features/subJwellery.js/components/Pjade'
-import Popular from '../popular/component/popular';     
+import Popular from '../popular/component/Popular';     
 function Routes() {
     return (
         <div>
