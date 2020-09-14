@@ -38,80 +38,40 @@ class Header extends Component {
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="nav navbar-nav ml-auto">
-                        <Link to="/carousel">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#" style={{ fontSize: '1.2em' }}>Home <span class="sr-only">(current)</span></a>
-                            </li>
-                        </Link>
-                        <Link to="/discount">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" style={{ fontSize: '1.2em' }}>New Arrival</a>
-                            </li>
-                        </Link>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style={{ fontSize: '1.2em' }}>Popular</a>
+                <div className="collapse navbar-collapse dropdownclick " id="collapsibleNavbar">
+                    <ul className=" nav navbar-nav ml-auto ">
+                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link " to="/home">Home</Link>
                         </li>
-
-                        <li class="nav-item dropdown">
-
-                            <a className="nav-link dropdown-toggle " style={{ fontSize: '1.2em' }} href="#" id="navbarDropdownMenuLink">Jwellery</a><span><ion-icon name="arrow-dropdown">
-                            </ion-icon></span>
-                            <ul className="dropul" style={{listStyleType:"none"}}>
-
-                                <li><Link to="/necklace"><a class="dropdown-item" href="#" id="1">Necklace</a></Link>
-                               
-                                </li>
-                                <li><Link to="/bracelet"><a class="dropdown-item" href="#">Bracelet</a></Link></li>
-                                <li><Link to="/earrings"><a class="dropdown-item" href="#">Earrings</a></Link></li>
-                                <li><Link to="/rings"><a class="dropdown-item" href="#">Rings</a></Link></li>
-                                <li><Link to="/pendants"><a class="dropdown-item" href="#">Pendants</a></Link></li>
-                                <li>
-                                    <div className="dropdown-divider"></div>
-                                    <Link to="/discountitem" style={{ fontSize: '1.2em' }}><a class="dropdown-item" href="#">Discount Items</a></Link>
-                                </li>
-                            </ul>
-
-                            {/* <Link to="#" className="nav-link "><a className=" dropbtn nav-link dropdown-toggle " style={{fontSize: '1.2em'}} href="#" id="navbarDropdownMenuLink">Jwellery</a><span><ion-icon name="arrow-dropdown"></ion-icon></span> </Link>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li className="dropdown-content1 small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
-                                <Link to="/necklace">Necklace</Link>
-                            </li>
-                            <li>
+                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link " to="/discount">New Arrival</Link>
+                        </li>
+                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link " to="/popular">Popular </Link>
+                        </li>
+                        <li className="nav-item dropdown " >
+                            <Link to="#" className="nav-link ">Jwellery <i className="fa fa-caret-down"></i> </Link>
+                            <li className="dropdown-content small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link to="/necklace"> Necklace</Link>
+                            <Link to="/bracelet">Bracelet</Link>
+                            <Link to="/earrings"> Earrings</Link>
+                            <Link to="/rings"> Ring</Link>
+                            <Link to="/pendants"> Pendant</Link>
                                 <div className="dropdown-divider"></div>
-                                <Link to="/discountitem"><a class="nav-link" href="#" style={{ fontSize: '1.2em' }}>Discount Items</a></Link>
+                                <Link to="/discountitem">Discount Items</Link>
                             </li>
-                            </div> */}
-                            {/* <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <ul>
-                                        <li><a class="dropdown-item mb-3" href="#">Necklace</a></li>
-                                        <li><a class="dropdown-item mb-3" href="#">Bracelet</a></li>
-                                        <a class="dropdown-item mb-3" href="#">Earrings</a>
-                                        <a class="dropdown-item mb-3" href="#">Ring</a>
-                                        <a class="dropdown-item mb-3" href="#">Pendant</a>
+                        </li> 
 
-                                        <hr />
-                                        <a class="dropdown-item bg-warning" href="#">Discount Items</a>
-                                        </ul>
-
-                                    </div> */}
-
+                        <li className="nav-item dropdown " >
+                            <Link to="#" className="nav-link ">Info <i className="fa fa-caret-down"></i> </Link>
+                            <li className="dropdown-content small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link to="/service"> Convertor</Link>
+                                <div className="dropdown-divider"></div>
+                                <Link to="/loan">Loan Calculator</Link>
+                            </li>
                         </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style={{ fontSize: '1.2em' }} href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Info
-                          </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Convertor</a>
-                                <hr />
-                                <a class="dropdown-item bg-warning" href="#">Loan Calculator</a>
-
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style={{ fontSize: '1.2em' }} href="#">Contact Us</a>
+                        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <Link className="nav-link" to="/contactus">Contact Us</Link>
                         </li>
                     </ul>
                 </div>

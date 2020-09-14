@@ -11,11 +11,11 @@ export default class Earring_nav extends React.Component {
                 <div className="sectional-nav mt-2 clearBoth sticky-top">
                     <div className="horizontalMenu w-100">
                         <ul className="hidden-sm-down p-0 d-flex align-items-center justify-content-between sticky w-100" >
-                        <Link to='/gold-earring' ><li>Gold</li></Link>
-                        <Link to='/platinum-earring' ><li>Platinum</li></Link>
-                        <Link to='/pearl-earring' ><li>Pearl</li></Link>
-                        <Link to='/jade-earring' ><li>Gems</li></Link>
-                        <Link to='/diamond-earring' ><li>Diamond</li></Link>
+                        <Link to='/gold-earring' ><li style={{color:"black"}}>Gold</li></Link>
+                        <Link to='/platinum-earring' ><li style={{color:"black"}}>Platinum</li></Link>
+                        <Link to='/pearl-earring' ><li style={{color:"black"}}>Pearl</li></Link>
+                        <Link to='/jade-earring' ><li style={{color:"black"}}>Gems</li></Link>
+                        <Link to='/diamond-earring' ><li style={{color:"black"}}>Diamond</li></Link>
                         </ul>
 
                     </div>

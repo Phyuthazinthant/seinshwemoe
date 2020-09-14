@@ -8,7 +8,7 @@ function Popular() {
             <PopularList />
             <Shop_contant />
         </div>
-    )
+    ) 
 }
-
+ 
 export default Popular

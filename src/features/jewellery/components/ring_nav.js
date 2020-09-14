@@ -11,11 +11,11 @@ export default class Ring_nav extends React.Component {
                 <div className="sectional-nav mt-2 clearBoth sticky-top">
                     <div className="horizontalMenu w-100">
                         <ul className="hidden-sm-down p-0 d-flex align-items-center justify-content-between sticky w-100" >
-                        <Link to='/gold-rings' ><li>Gold</li></Link>
-                        <Link to='/platinum-rings' ><li>Platinum</li></Link>
-                        <Link to='/pearl-rings' ><li>Pearl</li></Link>
-                        <Link to='/jade-rings' ><li>Gems</li></Link>
-                        <Link to='/diamond-rings' ><li>Diamond</li></Link>
+                        <Link to='/gold-rings' ><li style={{color:"black"}}>Gold</li></Link>
+                        <Link to='/platinum-rings' ><li style={{color:"black"}}>Platinum</li></Link>
+                        <Link to='/pearl-rings' ><li style={{color:"black"}}>Pearl</li></Link>
+                        <Link to='/jade-rings' ><li style={{color:"black"}}>Gems</li></Link>
+                        <Link to='/diamond-rings' ><li style={{color:"black"}}>Diamond</li></Link>
                         </ul>
 
                     </div>

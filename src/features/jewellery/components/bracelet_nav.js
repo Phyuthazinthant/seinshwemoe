@@ -10,12 +10,12 @@ export default class Bracelet_nav extends React.Component {
             <div className="container">
                 <div className="sectional-nav mt-2 clearBoth sticky-top">
                     <div className="horizontalMenu w-100">
-                        <ul className="hidden-sm-down p-0 d-flex align-items-center justify-content-between sticky w-100" >
-                        <Link to='/gold-bracelet' ><li>Gold</li></Link>
-                        <Link to='/platinum-bracelet' ><li>Platinum</li></Link>
-                        <Link to='/pearl-bracelet' ><li>Pearl</li></Link>
-                        <Link to='/jade-bracelet' ><li>Gems</li></Link>
-                        <Link to='/diamond-bracelet' ><li>Diamond</li></Link>
+                        <ul className="hidden-sm-down p-0 d-flex align-items-center justify-content-between sticky w-100" style={{color:"black"}}>
+                        <Link to='/gold-bracelet' ><li style={{color:"black"}}>Gold</li></Link>
+                        <Link to='/platinum-bracelet' ><li style={{color:"black"}}>Platinum</li></Link>
+                        <Link to='/pearl-bracelet' ><li style={{color:"black"}}>Pearl</li></Link>
+                        <Link to='/jade-bracelet' ><li style={{color:"black"}}>Gems</li></Link>
+                        <Link to='/diamond-bracelet' ><li style={{color:"black"}}>Diamond</li></Link>
                         </ul>
 
                     </div>

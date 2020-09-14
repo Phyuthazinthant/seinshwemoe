@@ -11,11 +11,11 @@ export default class Pendant_nav extends React.Component {
                 <div className="sectional-nav mt-2 clearBoth sticky-top">
                     <div className="horizontalMenu w-100">
                         <ul className="hidden-sm-down p-0 d-flex align-items-center justify-content-between sticky w-100" >
-                        <Link to='/gold-pendant' ><li>Gold</li></Link>
-                        <Link to='/platinum-pendant' ><li>Platinum</li></Link>
-                        <Link to='/pearl-pendant' ><li>Pearl</li></Link>
-                        <Link to='/jade-pendant' ><li>Gems</li></Link>
-                        <Link to='/diamond-pendant' ><li>Diamond</li></Link>
+                        <Link to='/gold-pendant' ><li style={{color:"black"}}>Gold</li></Link>
+                        <Link to='/platinum-pendant' ><li style={{color:"black"}}>Platinum</li></Link>
+                        <Link to='/pearl-pendant' ><li style={{color:"black"}}>Pearl</li></Link>
+                        <Link to='/jade-pendant' ><li style={{color:"black"}}>Gems</li></Link>
+                        <Link to='/diamond-pendant' ><li style={{color:"black"}}>Diamond</li></Link>
                         </ul>
 
                     </div>
