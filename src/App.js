@@ -1,12 +1,14 @@
+
 import React from 'react'
 import Header from './app/components/Header'
 import Routes from './app/routes';
-import Necklace from './features/jewellery/components/Necklace';
+import {BrowserRouter} from 'react-router-dom';
 function App() {
   return (
     <div>
-      <Routes />
-    
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     </div>
   )
 }
