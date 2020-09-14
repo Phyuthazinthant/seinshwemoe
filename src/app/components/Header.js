@@ -3,9 +3,7 @@ import MMText from 'react-mm-text';
 import language from '../../configs/Language'
 import logo from '../smlogo.png';
 import { Link } from 'react-router-dom';
-import '../styles.css'
-import Ngold from '../../features/subJwellery.js/components/Ngold'
-import Necklace from '../../features/jewellery/components/Necklace';
+import '../styles.css'  
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 class Header extends Component {
     render() {
