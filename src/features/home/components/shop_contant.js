@@ -1,6 +1,7 @@
 import React from 'react'
 import Showroom from '../../../assets/image/showroom3.jpg'
 import './homestyle.css'
+import {Link} from 'react-router-dom';
 export default class Shop_contant extends React.Component {
     constructor(props) {
         super(props);
@@ -14,7 +15,7 @@ export default class Shop_contant extends React.Component {
                         <span>Sein Shwe Moe
                     <br></br>Gold and Jwellery Shop
                     </span><br></br>
-                        <a className="btn btn-warning" href="">More...</a>
+                    <Link className="btn btn-warning" to="/contactus" style={{color:'black'}}>More...</Link>
                     </div>
                 </div>
             </div>

@@ -14,21 +14,23 @@ export default class ServicePage extends React.Component {
             ywae: "",
             gram: "",
             ans: "",
-            priceLable: "ေရႊေစ်း"
+            priceLable: ""
         }
     }
     _handleInputsChanged = stateData => {
-        if (Object.keys(stateData).toString() !== "tdygold") { this.setState({ priceLable: "ေရႊေစ်း" }) }
-        this.setState(stateData)
+        if (Object.keys(stateData).toString() !== "tdygold") 
+            this.setState({ priceLable: "ရွှေဈေး" })
+            this.setState(stateData)
     }
     _handleInputsChangedGram = stateData => {
-        if (parseInt(Object.values(stateData)) !== 0) this.setState({ priceLable: "၁ ဂရမ္ေစ်း" })
-        this.setState(stateData);
+        if (parseInt(Object.values(stateData)) !== 0) 
+            this.setState({ priceLable: "၁ ဂရမ္ေစ်း" })
+            this.setState(stateData)
     }
 
     onCalculateClick = () => {
         const { kyat, pae, ywae, tdygold, gram } = this.state;
-        let k, p, p1, k1, y, ya, ky;
+        let k, k1, ky, p, p1, y, ya;
         if (gram === "" || parseInt(gram) === 0) {
             if (ywae === "") p = 0;
             else p = ywae / 7.5;
@@ -43,7 +45,6 @@ export default class ServicePage extends React.Component {
 
             let total = k1 * tdygold;
             let g = k1 * 16.6;
-            // round.up(total,-3)
             this.setState({ ans: round.up(total, -2), gram: round.up(g, 2) })
         }
         else {
@@ -78,136 +79,133 @@ export default class ServicePage extends React.Component {
         })
     }
 
-    
-
-        render(){
-            const clan = "mm"
-
-            const { kyat, pae, ywae, tdygold, gram } = this.state
-
-            return (
-
-                <div className="container">
-                    <div class="bg-light border-0 pt-1 text-center">
-                        <div className=" font-weight-bold">
-                            <MMText
-                                text="၁က်ပ္သားတြင္ ၁၆.၆ ဂရမ္ျဖင့္ တြက္ထားပါသည္။"
-                                showFont={"unicode"}
-                                conveter={"rabbit"}
-                                detector={"knayi"}
-
-                            />
-                        </div>
 
 
-                        <form className="mt-3" >
-                            <div className="form-group d-flex flex-wrap justify-content-center ">
-                                <label for="colFormLabelLg" class="col-xs-3 col-sm-4 col-md-3 col-lg-2">
-                                    <MMText
-                                        text={lan[clan].toolkyat}
-                                        showFont={"unicode"}
-                                        conveter={"rabbit"}
-                                        detector={"knayi"}
-                                    />
-                                </label>
-                                <div className="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                    <input type="number" className="form-control" value={kyat} min="0" placeholder="" onChange={(e) => this._handleInputsChanged({ kyat: e.target.value })} />
-                                </div>
-                            </div>
+    render() {
+        const clan = "mm"
 
-                            <div className="form-group d-flex flex-wrap justify-content-center ">
-                                <label for="colFormLabelLg" class="col-xs-3 col-sm-4 col-md-3 col-lg-2">
-                                    <MMText
-                                        text={lan[clan].toolpae}
-                                        showFont={"unicode"}
-                                        conveter={"rabbit"}
-                                        detector={"knayi"}
-                                    />
-                                </label>
-                                <div className="col-xs-6  col-sm-4 col-md-3 col-lg-3">
-                                    <input type="number" className="form-control" min="0" value={pae} placeholder="" onChange={(e) => this._handleInputsChanged({ pae: e.target.value })} />
-                                </div>
-                            </div>
+        const { kyat, pae, ywae, tdygold, gram } = this.state
 
-                            <div className="form-group d-flex flex-wrap justify-content-center ">
-                                <label for="colFormLabelLg" class="col-xs-3 col-sm-4 col-md-3 col-lg-2">
-                                    <MMText
-                                        text={lan[clan].toolywae}
-                                        showFont={"unicode"}
-                                        conveter={"rabbit"}
-                                        detector={"knayi"}
-                                    />
-                                </label>
-                                <div className="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                    <input type="number" className="form-control" min="0" value={ywae} placeholder="" onChange={(e) => this._handleInputsChanged({ ywae: e.target.value })} />
-                                </div>
-                            </div>
-                            <div className="form-group d-flex flex-wrap justify-content-center ">
-                                <label for="colFormLabelLg" class="col-xs-3 col-sm-4 col-md-3 col-lg-2">
-                                    <MMText
-                                        text="ဂရမ္"
-                                        showFont={"unicode"}
-                                        conveter={"rabbit"}
-                                        detector={"knayi"}
-                                    />
-                                </label>
-                                <div className="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                    <input type="number" className="form-control" min="0" value={gram} placeholder="" onChange={(e) => this._handleInputsChangedGram({ gram: e.target.value })} />
-                                </div>
-                            </div>
-                            <div className="form-group d-flex flex-wrap justify-content-center ">
-                                <label for="colFormLabelLg" className="col-xs-3 col-sm-4 col-md-3 col-lg-2">
-                                    <MMText
-                                        text={this.state.priceLable}
-                                        showFont={"unicode"}
-                                        conveter={"rabbit"}
-                                        detector={"knayi"}
-                                    />
-                                </label>
-                                <div className="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                    <input type="number" className="form-control" min="0" value={tdygold} placeholder="MMK" onChange={(e) => this._handleInputsChanged({ tdygold: e.target.value })} />
-                                </div>
-                            </div>
+        return (
 
-                            <div className="form-group d-flex flex-wrap justify-content-center ">
-                                <label className="col-xs-1 col-sm-4 col-md-3 col-lg-2"></label>
-                                <div className="col-xs-9 col-sm-4 col-md-3 col-lg-3">
-                                    <button type="button" className="btn btn-warning bg-warning form-control" onClick={this.onCalculateClick.bind(this)} >Calculate</button>
-                                </div>
-                            </div>
-                            <div className="form-group d-flex flex-wrap justify-content-center ">
-                                <label className="col-xs-1 col-sm-4 col-md-3 col-lg-2"></label>
-                                <div className="col-xs-9 col-sm-4 col-md-3 col-lg-3">
-                                    <button type="button" className="btn btn-warning bg-warning form-control" onClick={this.onClearData.bind(this)} >Clear</button>
-                                </div>
-                            </div>
+            <div className="container">
+                <div class="bg-light b-0 pt-1 text-center">
+                    <div className=" font-weight-bold">
+                        <MMText
+                            text="၁ကျပ်သားတွင် ၁၆.၆ ဂရမ်ဖြင့် တွက်ထားပါသည်။"
+                            showFont={"unicode"}
+                            conveter={"rabbit"}
+                            detector={"knayi"}
 
-                            <div className="card card-header no-border d-flex tool_ans">
-
-                                <div className="form-group d-flex flex-wrap justify-content-center ">
-                                    <label for="colFormLabelLg" class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
-                                        <MMText
-                                            text={lan[clan].toolans}
-                                            showFont={"unicode"}
-                                            conveter={"rabbit"}
-                                            detector={"knayi"}
-                                        />
-                                    </label>
-                                    <div className="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                                        <span>{this.state.ans} &nbsp;MMK </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </form>
+                        />
                     </div>
 
-                    < ShopContant />
+
+                    <form className="form mt-3" >
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label class="col-xs-3 col-sm-4 col-lg-2">
+                                <MMText
+                                    text="ကျပ်"
+                                    showFont={"unicode"}
+                                    conveter={"rabbit"}
+                                    detector={"knayi"}
+                                />
+                            </label>
+                            <div className="col-xs-6 col-sm-4  col-lg-3">
+                                <input type="number" className="form-control" value={kyat} min="0" onChange={(e) => this._handleInputsChanged({ kyat: e.target.value })} />
+                            </div>
+                        </div>
+
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label class="col-xs-3 col-sm-4 col-lg-2">
+                                <MMText
+                                    text="ပဲ"
+                                    showFont={"unicode"}
+                                    conveter={"rabbit"}
+                                    detector={"knayi"}
+                                />
+                            </label>
+                            <div className="col-xs-6  col-sm-4  col-lg-3">
+                                <input type="number" className="form-control" min="0" value={pae} onChange={(e) => this._handleInputsChanged({ pae: e.target.value })} />
+                            </div>
+                        </div>
+
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label class="col-xs-3 col-sm-4 col-lg-2">
+                                <MMText
+                                    text="ရွေး"
+                                    showFont={"unicode"}
+                                    conveter={"rabbit"}
+                                    detector={"knayi"}
+                                />
+                            </label>
+                            <div className="col-xs-6 col-sm-4 col-lg-3">
+                                <input type="number" className="form-control" min="0" value={ywae} onChange={(e) => this._handleInputsChanged({ ywae: e.target.value })} />
+                            </div>
+                        </div>
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label class="col-xs-3 col-sm-4  col-lg-2">
+                                <MMText
+                                    text="ဂရမ်"
+                                    showFont={"unicode"}
+                                    conveter={"rabbit"}
+                                    detector={"knayi"}
+                                />
+                            </label>
+                            <div className="col-xs-6 col-sm-4  col-lg-3">
+                                <input type="number" className="form-control" min="0" value={gram} onChange={(e) => this._handleInputsChangedGram({ gram: e.target.value })} />
+                            </div>
+                        </div>
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label className="col-xs-3 col-sm-4  col-lg-2">
+                                <MMText
+                                    text="ရွှေဈေး"
+                                    showFont={"unicode"}
+                                    conveter={"rabbit"}
+                                    detector={"knayi"}
+                                />
+                            </label>
+                            <div className="col-xs-6 col-sm-4 col-lg-3">
+                                <input type="number" className="form-control" min="0" value={tdygold} placeholder="MMK" onChange={(e) => this._handleInputsChanged({ tdygold: e.target.value })} />
+                            </div>
+                        </div>
+
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label className="col-xs-1 col-sm-4 col-lg-2"></label>
+                            <div className="col-xs-6 col-sm-4  col-lg-3">
+                                <button type="button" className="btn btn-warning bg-warning form-control" onClick={this.onCalculateClick.bind(this)} >Calculate</button>
+                            </div>
+                        </div>
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label className="col-xs-1 col-sm-4 col-lg-2"></label>
+                            <div className="col-xs-6 col-sm-4  col-lg-3">
+                                <button type="button" className="btn btn-warning bg-warning form-control" onClick={this.onClearData.bind(this)} >Clear</button>
+                            </div>
+                        </div>
+
+                        <div className="form-group d-flex flex-wrap justify-content-center ">
+                            <label for="colFormLabelLg" class="col-xs-3 col-sm-4  col-lg-3">
+                                <MMText
+                                    text="စုစုပေါင်းကျသင့်ငွေ"
+                                    showFont={"unicode"}
+                                    conveter={"rabbit"}
+                                    detector={"knayi"}
+                                />
+                            </label>
+                            <div className="col-xs-6 col-sm-4  col-lg-3">
+                                <span>{this.state.ans} &nbsp;MMK </span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
-            )
-        }
+                < ShopContant />
+
+            </div>
+
+        )
     }
+}
 
 
 

@@ -19,9 +19,9 @@ export default {
     },
     
    
-<<<<<<< HEAD
+
 }
 
-=======
-}
->>>>>>> 2fbf3042ee23fd42e176af946f0a2c75051d09b2
+
+
+
