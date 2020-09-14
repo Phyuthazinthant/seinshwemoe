@@ -11,11 +11,11 @@ export default class Necklace_nav extends React.Component {
                 <div className="sectional-nav mt-2 clearBoth sticky-top">
                     <div className="horizontalMenu w-100">
                         <ul className="hidden-sm-down p-0 d-flex align-items-center justify-content-between sticky w-100" >
-                        <Link to='/goldnecklace' ><li>Gold</li></Link>
-                        <Link to='/platinum-necklace' ><li>Platinum</li></Link>
-                        <Link to='/pearl-necklace' ><li>Pearl</li></Link>
-                        <Link to='/jade-necklace' ><li>GEms</li></Link>
-                        <Link to='/diamond-necklace' ><li>Diamond</li></Link>
+                        <Link to='/goldnecklace' ><li style={{color:"black"}}>Gold</li></Link>
+                        <Link to='/platinum-necklace' ><li style={{color:"black"}}>Platinum</li></Link>
+                        <Link to='/pearl-necklace' ><li style={{color:"black"}}>Pearl</li></Link>
+                        <Link to='/jade-necklace' ><li style={{color:"black"}}>GEms</li></Link>
+                        <Link to='/diamond-necklace' ><li style={{color:"black"}}>Diamond</li></Link>
                         </ul>
 
                     </div>

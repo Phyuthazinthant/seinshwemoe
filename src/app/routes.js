@@ -1,10 +1,47 @@
 import React from 'react'
-
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Carousel from '../home/components/Carousel'
 import DiscountPage from '../pages/DiscountPage'
+import ServicePage from '../pages/ServicePage';
+import LoanPage from '../pages/LoanPage'
+import ContactPage from '../pages/ContactPage';
+import Ngold from '../features/subJwellery.js/components/Ngold'
+import Nplatinum from '../features/subJwellery.js/components/Nplatinum'
+import Npearl from '../features/subJwellery.js/components/Npearl'
+import Njade from '../features/subJwellery.js/components/Njade'
+import Ndiamond from '../features/subJwellery.js/components/Ndiamond'
+import Necklace from '../features/jewellery/components/Necklace'
+
+import Bracelet from '../features/jewellery/components/Bracelet'
+import Earrings from '../features/jewellery/components/Earrings'
+import Ring from '../features/jewellery/components/Ring'
+import Pendant from '../features/jewellery/components/Pendant'
+import Discount_Items from '../features/jewellery/components/Discount_Items'
+
+import Necklaceroutes from './necklaceroutes'
+import RouteConfit from '../configs/components/routesconfit'
+import Bdiamond from '../features/subJwellery.js/components/Bdiamond'
+import Bgold from '../features/subJwellery.js/components/Bgold'
+import Bplatinum from '../features/subJwellery.js/components/Bplatinum'
+import Bpearl from '../features/subJwellery.js/components/Bpearl'
+import Bjade from '../features/subJwellery.js/components/Bjade'
+import Ediamond from '../features/subJwellery.js/components/Ediamond'
+import Egold from '../features/subJwellery.js/components/Egold'
+import Eplatinum from '../features/subJwellery.js/components/Eplatinum'
+import Epearl from '../features/subJwellery.js/components/Epearl'
+import Ejade from '../features/subJwellery.js/components/Ejade'
+import Rdiamond from '../features/subJwellery.js/components/Rdiamond'
+import Rgold from '../features/subJwellery.js/components/Rgold'
+import Rpearl from '../features/subJwellery.js/components/Rpearl'
+import Rplatinum from '../features/subJwellery.js/components/Rplatinum'
+import Rjade from '../features/subJwellery.js/components/Rjade'
+import Pdiamond from '../features/subJwellery.js/components/Pdiamond'
+import Pgold from '../features/subJwellery.js/components/Pgold'
+import Pplatinum from '../features/subJwellery.js/components/Pplatinum'
+import Ppearl from '../features/subJwellery.js/components/Ppearl'
+import Pjade from '../features/subJwellery.js/components/Pjade'
 import Popular from '../popular/component/Popular'
 function Routes() {
     return (
@@ -12,11 +49,12 @@ function Routes() {
             <Router>
                 <Header />
                 <Switch>
-                    <Route exact path="/">
-                        <Redirect to="/home" />
-                    </Route>
+                    <Route exact path="/"><Redirect to="/home" /></Route>
                     <Route path="/home" render={() => <Carousel />} />
                     <Route path="/discount" render={() => <DiscountPage />} />
+                    <Route path='/contactus' component={ContactPage} />
+                    <Route path="/loan" component={LoanPage} />
+                    <Route path="/service" component={ServicePage} />
                     
                     <Route path="/necklace" render={() => <Necklace />} />
                     
@@ -62,12 +100,6 @@ function Routes() {
 
                 <Footer />
             </Router>
-
-
-
-
-
-
 
         </div>
     )
