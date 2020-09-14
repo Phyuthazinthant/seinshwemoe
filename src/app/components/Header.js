@@ -11,10 +11,8 @@ class Header extends Component {
     render() {
         return (
 
-            <nav className="navbar navbar-expand-lg navbar-light "
-                style={{ backgroundColor: "#dab03c" }} >
-
-                <Link className="navbar-brand d-flex">
+            <nav className="navbar navbar-expand-lg navbar-light sticky-top" style={{ backgroundColor: "#dab03c" }}>
+                <Link className="navbar-brand d-flex" to="#">
                     <img src={logo} alt="logo text" className="imgLogo rounded-circle " />
                     <p className="logoText" >
                         <small>
@@ -26,7 +24,7 @@ class Header extends Component {
                             />
                         </small>
                         <br />
-                        <span className="logoText2">
+                        <span >
                             <MMText
                                 text={language["mm"].shop}
                                 showFont={"unicode"}
@@ -37,7 +35,6 @@ class Header extends Component {
                     </p>
 
                 </Link>
-
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -118,9 +115,7 @@ class Header extends Component {
                         </li>
                     </ul>
                 </div>
-
             </nav>
-
 
         );
     }
