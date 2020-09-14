@@ -76,7 +76,6 @@
     font-size: 11px;
 }
 }
-<<<<<<< HEAD
 
 .dropdown{
   position: relative;
@@ -85,7 +84,6 @@
   position: absolute;
   
 }
-=======
 .navbar{
   display: flex;
 }
@@ -107,4 +105,3 @@ text-shadow:-1px 0 #ffffff,1px 0 white,0 -1px rgb(255, 255, 255);
 .navbar-nav {
     font-weight: 500;
      }
->>>>>>> af4b2e55813b2a671178236d5539cd53511483b2
