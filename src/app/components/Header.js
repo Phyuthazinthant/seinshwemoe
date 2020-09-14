@@ -22,7 +22,7 @@ class Header extends Component {
                             />
                         </small>
                         <br />
-                        <span >
+                        <span className="logoText2">
                             <MMText
                                 text={language["mm"].shop}
                                 showFont={"unicode"}

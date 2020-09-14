@@ -1,0 +1,16 @@
+ .map-style{
+        height:450px;
+         width:100%;
+         z-index:3;
+         position:initial;
+         left:0px;
+         top:0px;
+         margin-top:5px;
+         margin-bottom: 10px;
+         transition-duration: 0.8s;
+         touch-action: pan-x pan-y;
+         transition: opacity ease-in-out;
+         background-color:white;
+         text-align: center; 
+       
+     }

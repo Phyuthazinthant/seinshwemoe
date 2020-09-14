@@ -1,10 +1,12 @@
 import React from 'react'
-
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Carousel from '../home/components/Carousel'
 import DiscountPage from '../pages/DiscountPage'
+import ServicePage from '../pages/ServicePage';
+import LoanPage from '../pages/LoanPage'
+import ContactPage from '../pages/ContactPage';
 import Ngold from '../features/subJwellery.js/components/Ngold'
 import Nplatinum from '../features/subJwellery.js/components/Nplatinum'
 import Npearl from '../features/subJwellery.js/components/Npearl'
@@ -47,11 +49,12 @@ function Routes() {
             <Router>
                 <Header />
                 <Switch>
-                    <Route exact path="/">
-                        <Redirect to="/home" />
-                    </Route>
+                    <Route exact path="/"><Redirect to="/home" /></Route>
                     <Route path="/home" render={() => <Carousel />} />
                     <Route path="/discount" render={() => <DiscountPage />} />
+                    <Route path='/contactus' component={ContactPage} />
+                    <Route path="/loan" component={LoanPage} />
+                    <Route path="/service" component={ServicePage} />
                     
                     <Route path="/necklace" render={() => <Necklace />} />
                     
@@ -97,12 +100,6 @@ function Routes() {
 
                 <Footer />
             </Router>
-
-
-
-
-
-
 
         </div>
     )
